@@ -1,0 +1,133 @@
+main {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 0;
+  position: relative;
+}
+.loc {
+  font-size: 2.5rem;
+  margin-top: 50px;
+}
+.text h1 {
+  position: relative;
+}
+.text h1::before {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 60px;
+  background: #982ed9;
+  border-radius: 8px;
+  position: absolute;
+  left: -15px;
+  top: 8px;
+}
+.text h2 {
+  position: relative;
+}
+.text h2::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 40px;
+  background: #982ed9;
+  border-radius: 8px;
+  position: absolute;
+  left: -13px;
+  top: 3px;
+}
+@media (max-width: 1000px) {
+  .text h1 {
+    font-size: 52px;
+  }
+  .text h2 {
+    font-size: 35px;
+  }
+  main {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+  .text h1::before {
+    width: 7px;
+    height: 48px;
+    border-radius: 4px;
+    left: -12px;
+    top: 2px;
+  }
+  .text h2::before {
+    width: 5px;
+    height: 40px;
+    border-radius: 8px;
+    left: -11px;
+    top: 2px;
+  }
+}
+
+@media (max-width: 800px) {
+  .text h1 {
+    font-size: 45px;
+  }
+  .text h2 {
+    font-size: 25px;
+  }
+  main {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .text h1::before {
+    width: 7px;
+    height: 40px;
+    left: -8px;
+    top: 1px;
+  }
+  .text h2::before {
+    width: 5px;
+    height: 28px;
+    left: -7px;
+    top: 0px;
+  }
+}
+@media (max-width: 600px) {
+  .text h1 {
+    font-size: 40px;
+    margin-bottom: -20px;
+  }
+  .text h2 {
+    font-size: 25px;
+  }
+  main {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+.text2 {
+  font-size: 2rem;
+  color: #4b4b4b;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 80px;
+}
+.text2 span {
+  font-weight: 600;
+  color: #6e1aa1;
+}
+@media (max-width: 400px) {
+  main {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  main img {
+    display: none;
+  }
+}

@@ -1,0 +1,25 @@
+body {
+  background: #f3eef6;
+  font-family: "DM Sans", Arial, Sans-serif;
+  color: #2a2a2a;
+  margin: 0px;
+  position: relative;
+}
+h1 h2 h3 p {
+  margin: 0px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  display: inline-flex;
+}
+.subtitulo {
+  font-size: 150px;
+  color: #e4caf4;
+  max-width: 4ch;
+  line-height: 1;
+}

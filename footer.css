@@ -1,0 +1,36 @@
+.conteudo {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  color: #d0d0d0;
+  font-size: 25px;
+  line-height: 1.5;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+footer {
+  background: #2a2a2a;
+  height: 400px;
+}
+div .mens {
+  text-align: right;
+  max-width: 30ch;
+  display: flex;
+  margin-left: 270px;
+}
+.bef {
+  position: relative;
+}
+.bef::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 30px;
+  background: #982ed9;
+  left: -10px;
+  top: 3px;
+}
